@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewel | RN, RM | Founder, Jewindris | The Clinical Eye</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="container">
+      <nav>
+        <h2 class="logo">Jewel</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+
+      <div class="hero-text">
+        <p class="hero-tag">👋 The clinical eye founders forgot to put in the room</p>
+        <h1>Hi, I'm <span class="accent">Jewel</span></h1>
+        <p class="hero-desc">
+          Registered Nurse & Midwife. Founder of Jewindris Geriatric Homecare.
+          Clinical reviewer at The Clinical Eye — I find the safety gaps in
+          health tech apps before patients do.
+        </p>
+        <a href="#projects" class="btn">See My Work</a>
+        <a href="#contact" class="btn btn-outline">Book a Clinical Audit</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="jewel.jpg" alt="Jewel" class="avatar">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-sub">
+        I started as a bedside nurse — emergency care, obstetrics, neonatal,
+        oncology, stroke management, community health. Two things grew out of
+        that: a WhatsApp conversation about elderly parents that became
+        Jewindris, and a frustrating search for a remote monitoring app for
+        my own family that became The Clinical Eye. I'm currently completing
+        my NYSC year in Abuja while building both.
+      </p>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">🎓</div>
+          <h3>Education & Certs</h3>
+          <p>BSc Nursing Science, Madonna University · NMCN/RN, RM licensed · PAHO Telehealth Certificate · IPC Certified</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🩺</div>
+          <h3>Clinical Background</h3>
+          <p>Emergency care, obstetrics, neonatal care, oncology, stroke management, community health. EHR experience: Helium Health, Health in the Box.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🚀</div>
+          <h3>What I'm Building</h3>
+          <p>Jewindris (post-discharge elderly homecare) and The Clinical Eye (clinical app auditing for health tech founders).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-sub">What I bring to the bedside, the boardroom, and the audit.</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">🩹</span>
+          <h3>Clinical Care</h3>
+          <p>Emergency, obstetrics & midwifery, neonatal, oncology, stroke, community health</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🔍</span>
+          <h3>Clinical App Auditing</h3>
+          <p>Clinical safety frameworks, WCAG, NDPR, FDA SaMD, IMDRF, HL7 FHIR concepts</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🏠</span>
+          <h3>Care Coordination</h3>
+          <p>Post-discharge homecare design, caregiver hiring standards, service agreements</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">💻</span>
+          <h3>Digital & EHR</h3>
+          <p>Helium Health, Health in the Box, HTML/CSS (learning), content strategy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION (SLIDESHOW) -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Some of what I've built.</p>
+
+      <div class="slideshow">
+        <div class="slide active">
+          <div class="project-img grad-1">Jewindris</div>
+          <div class="project-body">
+            <h3>Jewindris Geriatric Homecare</h3>
+            <p>Post-discharge elderly care coordination — caregiver hiring standards, service agreements, NMCN/NBTE-aligned training.</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project-img grad-2">The Clinical Eye</div>
+          <div class="project-body">
+            <h3>The Clinical Eye</h3>
+            <p>Clinical app audits for health tech founders. Sample finding: a medication management app triangle framework — storage, tracking, prompting.</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project-img grad-3">Clinical Review Tuesdays</div>
+          <div class="project-body">
+            <h3>Clinical Review Tuesdays</h3>
+            <p>My LinkedIn series reviewing health apps through patient experience, not product criticism — featuring "Mama."</p>
+            <a href="#" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+
+        <button class="slide-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slide-arrow next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="slide-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Talk</h2>
+      <p class="section-sub">Building a health app? Need homecare for a loved one? Reach out.</p>
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2026 Jewel. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index) {
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      slideIndex = (index + slides.length) % slides.length;
+      slides[slideIndex].classList.add('active');
+      dots[slideIndex].classList.add('active');
+    }
+
+    function changeSlide(step) {
+      showSlide(slideIndex + step);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+    }
+
+    setInterval(() => changeSlide(1), 6000);
+  </script>
+
+</body>
+</html>
